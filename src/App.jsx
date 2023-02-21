@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState } from 'react'
 import './App.css'
 import Search from '../src/components/Search'
 import Home from '../src/components/Home'
@@ -14,7 +13,7 @@ function App() {
     const options = {
       method: 'GET',
       headers: {
-        //enter your api headers here
+        //enter api headers here
       }
     };
     let tmp=search.replace(" ","%20")
