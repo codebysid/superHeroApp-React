@@ -1,0 +1,104 @@
+:root {
+  --black:#1c1c1c;
+  --grey:#6d6d6d;
+}
+
+*{
+  color:white;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+/*App Component */
+
+.App{
+  background-color: var(--black);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.App > form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  height: 5vw;
+}
+input{
+  font-size: 1vw;
+  padding: .5vw;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-radius: .5vw;
+  background-color: var(--grey);
+}
+
+button{
+  font-size: 1vw;
+  padding:.5vw 1.5vw;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  border-radius: .5vw;
+  cursor: pointer;
+}
+button:hover{
+  border: 0.15vw solid white;
+}
+
+img{
+  border-radius: 1vw;
+  width: 50%;
+}
+
+/* Home Component and Search Component */
+.heroDiv{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  width: 100%;
+}
+
+.heroImageDiv{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1vw;
+  background-color: black;
+  width: 40%;
+  padding: 0.5vw;
+  border-radius: 1vw;
+}
+.heroDetailsDiv{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: .3vw;
+  width: 40%;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+/* Details Text */
+.name{
+  font-weight: bolder;
+  font-size: 2vw;
+}
+.appeared,.publisher,.relations,.occupation,.indRelation{
+  font-size: 1vw;
+  color: var(--grey);
+}
+
+.relations{
+  display: flex;
+  flex-flow: column wrap;
+
+}
+/* Close Button  */
+.closeBtn{
+  background-color: #ff6961;
+}
